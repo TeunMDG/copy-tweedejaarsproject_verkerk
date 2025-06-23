@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anomaly detection</title>
+</head>
+<body>
+  <form action="/" method="POST">
+    <h1>Input .csv of Kwh</h1>
+    <input type="file" id="csvfile" accept=".csv"/>
+    <h1>Input .csv of freq</h1>
+    <input type="file" id="csvfreq" accept=".csv" />
+    <h1>Input cost energy per Kwh</h1>
+    <h4>please in format: </h4>
+    <input type="text" inputmode="decimal" id="runtimecost" name="float-input" pattern="[0-9]*[.,]?[0-9]*">
+    <h1>Input cost of replace/repair</h1>
+    <h4></h4>
+    <input type="text" inputmode="decimal" id="replacecost" name="float-input" pattern="[0-9]*[.,]?[0-9]*">
+    <h3>Run:</h3>
+    <input type="submit" value="Run Calculations">
+  </form>
+</html>
